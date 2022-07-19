@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+
+}
+
+.intro {
+    width: 50%;
+    height: auto;
+}
+
+
+
+.intro-left h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.intro-left p {
+    margin-bottom: 35px;
+}
+
+.intro-left a {
+    text-decoration: none;
+    background-color: rgb(235, 82, 108);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+.intro-right img {
+    width: 80%;
+    margin-left: 104px;
+    border: 1px solid rgb(196, 190, 190);
+    border-radius: 50%;
+}
+
+.company {
+    display: flex;
+    background-color: azure;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-logo {
+    margin-left: 40px;
+}
+
+.collection {
+    padding: 17px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.collection img {
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+
+.rating {
+    display: flex;
+    margin-top: -28px;
+    align-items: center;
+}
+
+.rating p {
+    margin-left: 10px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.filled {
+    color: gold;
+}
+
+#ft1 {
+    margin-top: -19px;
+    font-size: 12px;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #AAAAAA;
+    justify-items: center;
+}
+
+.collection-details h2 {
+    margin-top: 6px;
+}
+
+.footer {
+    height: 61px;
+    width: 180px;
+    margin-top: 0;
+}
+
+@media only screen and (max-width:688px) {
+
+    .introduction {
+        flex-direction: column-reverse;
+
+        justify-content: center;
+
+    }
+
+    .intro-left h1 {
+        font-size: 20px;
+
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .intro-right {
+
+        width: 80%;
+        text-align: center;
+        margin-right: 190px;
+
+    }
+
+    .intro-right img {
+        width: 100%;
+
+    }
+
+    .company {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .com-logo {
+        margin-left: 20px;
+    }
+
+    .collections {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .collection img {
+        width: 100%;
+
+    }
+
+}
